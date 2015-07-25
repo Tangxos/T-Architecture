@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "TSampleRuntime.h"
+#import "TRuntimeTest.h"
 
 @interface ViewController ()
 
@@ -17,6 +19,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    TSampleRuntime *sampleRuntime = [TSampleRuntime new];
+//    [sampleRuntime copyObject];
+//    [sampleRuntime objectDispose];
+//    [sampleRuntime setClass];
+//    [sampleRuntime addMethodWithOneParam];
+//    [sampleRuntime getClassAllMethod];
+//    [sampleRuntime getInstanceVar];
+//    [sampleRuntime setInstanceVar];
+//    [sampleRuntime getVarType];
+//    [sampleRuntime nameOfInstance];
+//    [sampleRuntime methodExchange];
+//    [sampleRuntime methodSetImplementation];
+
+//    TRuntimeTest *runtimeTest = [TRuntimeTest new];
+//    [runtimeTest testFun];
+
+    [sampleRuntime systemMethodExchange];
+    NSArray *array = @[@0, @1, @2, @3];
+    NSLog(@"last array:%@", [array lastObject]);
 }
 
 - (void)didReceiveMemoryWarning {

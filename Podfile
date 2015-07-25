@@ -1,0 +1,6 @@
+platform:ios, '7.0'
+pod 'ReactiveCocoa', '~> 2.5'
+pod 'Aspects', '~> 1.4.1'
+pod 'Masonry', '~> 0.6.1'
+pod 'AFNetworking', '~> 2.5.4'
+pod 'JRSwizzle', '~> 1.0'
